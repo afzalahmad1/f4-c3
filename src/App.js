@@ -8,10 +8,12 @@ const App=()=>{
 
   return(
   <div>
-    <Header />
+
+<Header />
 
           <Routes>
-                  <Route path="/f4-c3" element={<Signup />} />
+                  
+                  <Route  path="/signup" element={<Signup />} />
                   <Route path="/profile" element={<Profile />} />
                   
           </Routes> 

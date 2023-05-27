@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const Signup = () => {
-let flag = false;
+
 const [fullName,setFullName] = useState("");
 const [email,setEmail] = useState("");
 const [Password,setPassword] = useState("");
@@ -55,7 +55,7 @@ useEffect(()=>{
         "token" : token
       }
       localStorage.setItem("user",JSON.stringify(user));
-      console.log(flag);
+      
       navigate("/profile")
   }
 
@@ -85,7 +85,7 @@ useEffect(()=>{
         id="cnfPassword"
         onChange={(event)=>setCnfPassword(event.target.value)}/>
 
-        
+
         {message && <p style={{color: message == "Successfully signed up"?"green":"red"}}>{message}</p>}
         <button type="submit">Signup</button>
       </form>
