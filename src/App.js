@@ -11,7 +11,7 @@ const App=()=>{
     <Header />
 
           <Routes>
-                  <Route path="/" element={<Signup />} />
+                  <Route path="/f4-c3" element={<Signup />} />
                   <Route path="/profile" element={<Profile />} />
                   
           </Routes> 
